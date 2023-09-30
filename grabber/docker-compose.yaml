@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  server:
+    build: .
+    ports:
+      - "8000:8000"
+    restart: always
+    volumes:
+      - server_vol:/server
+
+volumes:
+  server_vol:
